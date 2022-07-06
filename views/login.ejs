@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Tela de login</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
+
 <body>
     <h2>Identifique-se</h2>
-    <form action="/login" method="POST">
-        <table>
-            <tr>
-                <td class="label">Usuario</td>
-                <td><input class="input" type="text" name="edtUserEmail"></td>
-            </tr>
-            <tr>
-                <td class="label">Senha</td>
-                <td><input  class="input"  type="password" name="edtPassword"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="botao"><input type="submit" value="Entrar"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="botao">
-                    <a href="/cadastroPaciente">Sou Paciente</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="botao">
-                    <a href="/cadastroProfissional">Sou Profissional</a>
-                </td>
-            </tr>
-        </table>
-    </form>
+    <section class="container">
+        <form action="/login" method="POST" class="formulario">
+            <table>
+                <tr>
+                    <td class="label">Usuario</td>
+                    <td><input class="input" type="text" name="edtUserEmail"></td>
+                </tr>
+                <tr>
+                    <td class="label">Senha</td>
+                    <td><input class="input" type="password" name="edtPassword"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button type="submit" class="botao">Entrar</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button class="botao"><a href="/cadastroPaciente">Sou Paciente</a></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button class="botao"><a href="/cadastroProfissional">Sou Profissional</a></button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
-</html>
 
+</html>

@@ -6,37 +6,49 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
-    <form action="/cadastroProfissional" method="POST">
-        <table>
-            <tr>
-                <td class="label">Email</td>
-                <td><input class="input" type="text" name="edtCadUserEmailProfissional"></td>
-            </tr>
-            <tr>
-                <td class="label">Nome</td>
-                <td><input class="input" type="text" name="edtCadUserNameProfissional"></td>
-            </tr>
-            <tr>
-                <td class="label">CPF</td>
-                <td><input class="input" type="text" name="edtCadUserCPFProfissional"></td>
-            </tr>
-            <tr>
-                <td class="label">CFP/CRP</td>
-                <td><input class="input" type="text" name="edtCadUserCRPProfissional"></td>
-            </tr>
-            <tr>
-                <td class="label">Data nascimento</td>
-                <td><input class="input" type="date" name="edtCadUserBirthProfissional"></td>
-            </tr>
-            <tr>
-                <td class="label">Senha</td>
-                <td><input class="input" type="password" name="edtCadUserPasswordProfissional"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="botao""><input type="submit" value="Cadastrar"></td>
-            </tr>
-        </table>
-    </form>
+    <section class="container">
+        <form action="/cadastroProfissional" method="POST" class="formulario">
+            <h2 class="titulo">Cadastro de Profissional</h2>
+            <table>
+                <tr>
+                    <td class="label">Email</td>
+                    <td><input class="input" type="text" name="edtCadUserEmailProfissional"></td>
+                </tr>
+                <tr>
+                    <td class="label">Nome</td>
+                    <td><input class="input" type="text" name="edtCadUserNameProfissional"></td>
+                </tr>
+                <tr>
+                    <td class="label">CPF</td>
+                    <td><input class="input" type="text" name="edtCadUserCPFProfissional"></td>
+                </tr>
+                <tr>
+                    <td class="label">CFP/CRP</td>
+                    <td><input class="input" type="text" name="edtCadUserCRPProfissional"></td>
+                </tr>
+                <tr>
+                    <td class="label">Data nascimento</td>
+                    <td><input class="input" type="date" name="edtCadUserBirthProfissional"></td>
+                </tr>
+                <tr>
+                    <td class="label">Senha</td>
+                    <td><input class="input" type="password" name="edtCadUserPasswordProfissional"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button type="submit" class="botao">Cadastrar</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button type="reset" class="botao">Limpar</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
 </html>
 

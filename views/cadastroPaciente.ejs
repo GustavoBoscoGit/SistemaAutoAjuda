@@ -6,33 +6,45 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
-    <form action="/cadastroPaciente" method="POST">
-        <table>
-            <tr>
-                <td class="label">Email</td>
-                <td><input class="input" type="text" name="edtCadUserEmail"></td>
-            </tr>
-            <tr>
-                <td class="label">Nome</td>
-                <td><input class="input" type="text" name="edtCadUserName"></td>
-            </tr>
-            <tr>
-                <td class="label">CPF</td>
-                <td><input class="input" type="text" name="edtCadUserCPF"></td>
-            </tr>
-            <tr>
-                <td class="label">Data nascimento</td>
-                <td><input class="input" type="date" name="edtCadUserBirth"></td>
-            </tr>
-            <tr>
-                <td class="label">Senha</td>
-                <td><input class="input" type="password" name="edtCadUserPassword"></td>
-            </tr>
-            <tr>
-                <td colspan="2" class="botao"><input type="submit" value="Cadastrar"></td>
-            </tr>
-        </table>
-    </form>
+    <section class="container">
+        <form action="/cadastroPaciente" method="POST" class="formulario">
+            <h2 class="titulo">Cadastro Paciente</h2>
+            <table>
+                <tr>
+                    <td class="label">Email</td>
+                    <td><input class="input" type="text" name="edtCadUserEmail"></td>
+                </tr>
+                <tr>
+                    <td class="label">Nome</td>
+                    <td><input class="input" type="text" name="edtCadUserName"></td>
+                </tr>
+                <tr>
+                    <td class="label">CPF</td>
+                    <td><input class="input" type="text" name="edtCadUserCPF"></td>
+                </tr>
+                <tr>
+                    <td class="label">Data nascimento</td>
+                    <td><input class="input" type="date" name="edtCadUserBirth"></td>
+                </tr>
+                <tr>
+                    <td class="label">Senha</td>
+                    <td><input class="input" type="password" name="edtCadUserPassword"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button type="submit" class="botao">Cadastrar</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="botao-wrapper">
+                            <button type="reset" class="botao">Limpar</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
 </html>
 
